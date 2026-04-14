@@ -621,6 +621,154 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dragonfly
       objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_Name
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 85f110f7-cb30-448e-ae8f-7d885bdce011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 60aafefd-0799-4c49-854a-f6b64b188a90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[2].m_Id
+      value: ea5f4f5d-af18-4f04-a101-cac326348512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[3].m_Id
+      value: 010cb3ff-82ec-42be-afef-b86bf2e2fa34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[4].m_Id
+      value: 21d1c30c-f08f-4ad1-99cb-91e1b712fca9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[5].m_Id
+      value: 2e0a969d-3067-4075-807d-2f06bdc1c825
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[6].m_Id
+      value: be789df5-f1b2-4aa7-a1bf-375771fde732
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[0].m_Name
+      value: 3D Vector
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[0].m_Path
+      value: 3DVector
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[1].m_Name
+      value: up
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <XRController>{LeftHand}/devicePosition/y
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[2].m_Name
+      value: down
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <XRController>{LeftHand}/devicePosition/y
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[3].m_Name
+      value: left
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[3].m_Path
+      value: <XRController>{RightHand}/deviceRotation/x
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[4].m_Name
+      value: right
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[4].m_Path
+      value: <XRController>{RightHand}/deviceRotation/x
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[5].m_Name
+      value: forward
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[5].m_Path
+      value: <XRController>{RightHand}/deviceRotation/z
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[6].m_Name
+      value: backward
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[6].m_Path
+      value: <XRController>{RightHand}/deviceRotation/z
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[0].m_Flags
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[1].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[2].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[3].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[4].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[5].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[6].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[3].m_Action
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[4].m_Action
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[5].m_Action
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
+      propertyPath: dragonflyControls.m_SingletonActionBindings.Array.data[6].m_Action
+      value: Dragonfly Controls
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2694004755137967685, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
