@@ -74,7 +74,6 @@ MonoBehaviour:
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &-8086447034288800207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,7 +418,6 @@ MonoBehaviour:
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &-5130460963100306222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +616,6 @@ MonoBehaviour:
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &-2848422180841306796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +689,6 @@ MonoBehaviour:
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &-1761485371701195997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,7 +1373,6 @@ MonoBehaviour:
   - {fileID: 274347273564094617}
   - {fileID: -694691595379029039}
   - {fileID: -6674096906647452307}
-  - {fileID: -5366601691523568029}
   - {fileID: 1746494006016999158}
   - {fileID: -1373616026373180638}
   - {fileID: 5976392199793121378}
@@ -1411,7 +1406,6 @@ MonoBehaviour:
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &5356499721767166187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,7 +1589,6 @@ MonoBehaviour:
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &8023257435433845108
 MonoBehaviour:
   m_ObjectHideFlags: 0

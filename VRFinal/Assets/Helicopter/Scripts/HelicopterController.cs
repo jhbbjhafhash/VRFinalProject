@@ -33,6 +33,17 @@ public class HelicopterController : MonoBehaviour
     public bool IsOnGround = true;
 
     public InputAction dragonflyControls;
+    public Vector3 movementValue = Vector3.zero; 
+
+    private void OnEnable()
+    {
+        dragonflyControls.Enable(); 
+    }
+
+    private void OnDisable()
+    {
+        dragonflyControls.Disable();
+    }
 
     void FixedUpdate()
     {
@@ -63,63 +74,62 @@ public class HelicopterController : MonoBehaviour
         HelicopterModel.transform.localRotation = Quaternion.Euler(hTilt.y, HelicopterModel.transform.localEulerAngles.y, -hTilt.x);
     }
 
-}
-    /*
-    private void OnKeyPressed(PressedKeyCode[] obj)
+    private void Update()
     {
+        movementValue = dragonflyControls.ReadValue<Vector3>();
+        Movement(); 
+    }
+
+    void Movement() {
         float tempY = 0;
         float tempX = 0;
 
         // stable forward
         if (hMove.y > 0)
-            tempY = - Time.fixedDeltaTime;
+            tempY = -Time.fixedDeltaTime;
         else
             if (hMove.y < 0)
-                tempY = Time.fixedDeltaTime;
+            tempY = Time.fixedDeltaTime;
 
         // stable lurn
         if (hMove.x > 0)
             tempX = -Time.fixedDeltaTime;
         else
             if (hMove.x < 0)
-                tempX = Time.fixedDeltaTime;
+            tempX = Time.fixedDeltaTime;
 
-
-        foreach (var pressedKeyCode in obj)
+        if (movementValue.y > 10)
         {
-            switch (pressedKeyCode)
-            {
-                case PressedKeyCode.SpeedUpPressed:
+            EngineForce += 0.1f;
+        }
 
-                    EngineForce += 0.1f;
-                    break;
-                case PressedKeyCode.SpeedDownPressed:
+        if (movementValue.y < 10)
+        {
+            EngineForce -= 0.1f;
+        }
 
-                    EngineForce -= 0.12f;
-                    if (EngineForce < 0) EngineForce = 0;
-                    break;
+        if (movementValue.x > 10)
+        {
+            if (IsOnGround) return;
+            tempY = Time.fixedDeltaTime;
+        }
 
-                    case PressedKeyCode.ForwardPressed:
+        if (movementValue.x < 10)
+        {
+            if (IsOnGround) return;
+            tempY = -Time.fixedDeltaTime;
+        }
 
-                    if (IsOnGround) break;
-                    tempY = Time.fixedDeltaTime;
-                    break;
-                    case PressedKeyCode.BackPressed:
+        if (movementValue.z > 10)
+        {
+            if (IsOnGround) return;
+            tempX = -Time.fixedDeltaTime;
+        }
 
-                    if (IsOnGround) break;
-                    tempY = -Time.fixedDeltaTime;
-                    break;
-                    case PressedKeyCode.LeftPressed:
-
-                    if (IsOnGround) break;
-                    tempX = -Time.fixedDeltaTime;
-                    break;
-                    case PressedKeyCode.RightPressed:
-
-                    if (IsOnGround) break;
-                    tempX = Time.fixedDeltaTime;
-                    break;
-            }
+        if (movementValue.z < 10)
+        {
+            if (IsOnGround) return;
+            tempX = Time.fixedDeltaTime;
         }
 
         hMove.x += tempX;
@@ -139,4 +149,4 @@ public class HelicopterController : MonoBehaviour
     {
         IsOnGround = false;
     }
-} */
+} 
