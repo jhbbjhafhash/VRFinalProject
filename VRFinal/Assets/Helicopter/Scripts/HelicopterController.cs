@@ -56,7 +56,7 @@ public class HelicopterController : MonoBehaviour
     {
         var turn = TurnForce * Mathf.Lerp(hMove.x, hMove.x * (turnTiltForcePercent - Mathf.Abs(hMove.y)), Mathf.Max(0f, hMove.y));
         hTurn = Mathf.Lerp(hTurn, turn, Time.fixedDeltaTime * TurnForce);
-        HelicopterModel.AddRelativeTorque(0f, hTurn * HelicopterModel.mass, 0f);
+       // HelicopterModel.AddRelativeTorque(0f, hTurn * HelicopterModel.mass, 0f);
         HelicopterModel.AddRelativeForce(Vector3.forward * Mathf.Max(0f, hMove.y * ForwardForce * HelicopterModel.mass));
     }
 
@@ -76,6 +76,7 @@ public class HelicopterController : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(dragonflyControls.ReadValue<Vector3>());
         movementValue = dragonflyControls.ReadValue<Vector3>();
         Movement(); 
     }
@@ -98,38 +99,42 @@ public class HelicopterController : MonoBehaviour
             if (hMove.x < 0)
             tempX = Time.fixedDeltaTime;
 
-        if (movementValue.y > 10)
+        if (movementValue.y > .65f)
         {
             EngineForce += 0.1f;
         }
 
-        if (movementValue.y < 10)
+        if (movementValue.y < .65f)
         {
             EngineForce -= 0.1f;
         }
 
-        if (movementValue.x > 10)
+        if (movementValue.x < .06f) //Forward
         {
             if (IsOnGround) return;
             tempY = Time.fixedDeltaTime;
         }
 
-        if (movementValue.x < 10)
+        if (movementValue.x > .06f) //Forward
         {
             if (IsOnGround) return;
             tempY = -Time.fixedDeltaTime;
         }
 
-        if (movementValue.z > 10)
+        if (movementValue.z < 0)
         {
             if (IsOnGround) return;
             tempX = -Time.fixedDeltaTime;
+            var force = (turnForcePercent - Mathf.Abs(hMove.y)) * HelicopterModel.mass;
+            HelicopterModel.AddRelativeTorque(0f, force, 0);
         }
 
-        if (movementValue.z < 10)
+        if (movementValue.z > 0)
         {
             if (IsOnGround) return;
             tempX = Time.fixedDeltaTime;
+            var force = -(turnForcePercent - Mathf.Abs(hMove.y)) * HelicopterModel.mass;
+            HelicopterModel.AddRelativeTorque(0f, force, 0);
         }
 
         hMove.x += tempX;
