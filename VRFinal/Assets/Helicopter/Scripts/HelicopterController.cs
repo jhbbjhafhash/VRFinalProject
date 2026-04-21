@@ -22,7 +22,7 @@ public class HelicopterController : MonoBehaviour
         get { return _engineForce; }
         set
         {
-            HelicopterSound.pitch = Mathf.Clamp(value / 0.2f, 0, 30.0f);
+           // HelicopterSound.pitch = Mathf.Clamp(value / 0.2f, 0, 30.0f);
             _engineForce = value;
         }
     }
@@ -100,12 +100,12 @@ public class HelicopterController : MonoBehaviour
 
         if (movementValue.y > .65f)
         {
-            EngineForce += 0.1f;
+            EngineForce += 0.8f;
         }
 
         if (movementValue.y < .65f)
         {
-            EngineForce -= 0.1f;
+            EngineForce -= 0.8f;
         }
 
         if (movementValue.x < .06f) //Forward
