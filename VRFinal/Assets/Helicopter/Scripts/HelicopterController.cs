@@ -76,7 +76,6 @@ public class HelicopterController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(dragonflyControls.ReadValue<Vector3>());
         movementValue = dragonflyControls.ReadValue<Vector3>();
         Movement(); 
     }
