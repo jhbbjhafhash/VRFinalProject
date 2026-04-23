@@ -22,7 +22,7 @@ public class HelicopterController : MonoBehaviour
         get { return _engineForce; }
         set
         {
-           // HelicopterSound.pitch = Mathf.Clamp(value / 0.2f, 0, 30.0f);
+            HelicopterSound.pitch = Mathf.Clamp(value / 0.2f, 0, 30.0f);
             _engineForce = value;
         }
     }

@@ -656,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6778287117149513206, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
       propertyPath: m_AngularDamping
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8039077963134746756, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
       propertyPath: m_Volume
@@ -676,7 +676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
       propertyPath: TurnForce
-      value: 0.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802841868122250500, guid: 7b655316b50611b4c890415e63ef9d4d, type: 3}
       propertyPath: ForwardForce
