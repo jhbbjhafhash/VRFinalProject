@@ -1,7 +1,7 @@
 # EXTREME DRAGONFLY ASSAULT 3  
 
 ## OVERVIEW
-In my awesome game you fly around on a dragonfly and destroy buildings by shooting fireballs. 
+In my awesome game you fly around on a dragonfly. 
 
 ## CONTROLS
 My game uses the position of the VR controllers to control the dragonfly. The controls are based on the collective and cyclic in a helicopter. 
